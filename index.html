@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Indranil Ganguly | AI & ML Developer</title>
+  <link rel="icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --main-color: #2c3e50;
+      --accent-color: #3498db;
+      --bg-color: #f9fbfd;
+      --text-color: #222;
+      --white: #fff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: var(--main-color);
+      color: white;
+      padding: 1.2rem 0;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+      margin-top: 0.5rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: var(--accent-color);
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 2px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .intro img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 5px solid var(--accent-color);
+    }
+
+    h2 {
+      color: var(--main-color);
+      margin-bottom: 1rem;
+      border-bottom: 3px solid var(--accent-color);
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    section {
+      margin-bottom: 3rem;
+      padding: 2rem;
+      background: var(--white);
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+
+    ul li {
+      margin: 0.5rem 0;
+    }
+
+    .project {
+      background-color: #f0f4f8;
+      border-left: 6px solid var(--accent-color);
+      border-radius: 10px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 0.5rem 0.5rem 0 0;
+      padding: 0.6rem 1.2rem;
+      background-color: var(--accent-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+      font-weight: 500;
+    }
+
+    .buttons a:hover {
+      background-color: #2a7dbd;
+      transform: scale(1.08);
+      box-shadow: 0 0 12px rgba(52, 152, 219, 0.5);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: var(--main-color);
+      color: white;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+
+    .hidden {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-out;
+    }
+
+    .fade-in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      .intro img {
+        width: 110px;
+        height: 110px;
+      }
+
+      .project {
+        font-size: 0.95rem;
+      }
+
+      .buttons a {
+        padding: 0.5rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Indranil Ganguly | Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="intro">
+      <img src="https://avatars.githubusercontent.com/u/213674741?v=4" alt="Indranil Ganguly">
+      <h2>Hello, I'm Indranil Ganguly</h2>
+      <p>AI & ML Enthusiast | Deep Learning | Computer Vision | Developer</p>
+    </div>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I'm a passionate student and developer working in the field of AI and computer vision. I enjoy building real-world projects using Python, TensorFlow, and OpenCV. I am always eager to explore new tools, solve real problems, and grow through collaboration and innovation.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Face Mask Detection</h3>
+        <p>Real-time detection using MobileNetV2 and OpenCV. Trained on over 6,000 labeled images with live camera support.</p>
+      </div>
+      <div class="project">
+        <h3>IMDB Sentiment Analysis</h3>
+        <p>Compared LSTM, CNN, and BERT models on IMDB reviews. Tuned hyperparameters to improve accuracy and performance.</p>
+      </div>
+      <div class="project">
+        <h3>Organ-CMNIST Classification</h3>
+        <p>Applied ML models on 28x28 grayscale medical images. Focused on binary vs multiclass classification using metrics like accuracy and precision.</p>
+      </div>
+      <div class="project">
+        <h3>MNIST Digit Recognition</h3>
+        <p>Created a CNN-based classifier for handwritten digits with OpenCV preprocessing and high real-time accuracy.</p>
+      </div>
+      <div class="project">
+        <h3>Diabetes Regression Analysis</h3>
+        <p>Built regression models to predict disease progression. Used BMI and BP features, evaluated with R² and RMSE.</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> Python, Java, C++, C, HTML, R</li>
+        <li><strong>Libraries:</strong> NumPy, Pandas, OpenCV, Scikit-learn, Matplotlib, Seaborn</li>
+        <li><strong>Frameworks:</strong> TensorFlow, Keras</li>
+        <li><strong>Tools:</strong> Git, Ubuntu, Jupyter, VS Code</li>
+        <li><strong>Others:</strong> MS Office, Power BI, Photoshop</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>📧 indranilganguly54@gmail.com</p>
+      <p>📞 +91 8902071300</p>
+      <div class="buttons">
+        <a href="https://github.com/iamganguly-2002" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/indranil-ganguly-8592472a6/" target="_blank">LinkedIn</a>
+        <a href="Resume.pdf" target="_blank">View Resume</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Indranil Ganguly. Built with ❤️ using HTML & CSS.
+  </footer>
+
+  <script>
+    // Highlight nav link on scroll
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('nav a');
+      let current = '';
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 80;
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // Animate section on scroll
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    document.querySelectorAll('section').forEach(section => {
+      section.classList.add('hidden');
+      observer.observe(section);
+    });
+  </script>
+
+</body>
+</html>
+
